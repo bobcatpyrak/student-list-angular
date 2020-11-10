@@ -1,8 +1,10 @@
+<app-menu></app-menu>
+
 <h1>List of Students</h1>
 
 <div>
-  <button [ngClass]="btnStyle" (click)="getStudents()">Load students</button>
-  &ngsp; <button (click)="changeColor()">Change color</button>
+  <span id="btn"> <button [ngClass]="btnStyle" (click)="getStudents()">Load students</button></span>
+  &ngsp; <span id="btn"><button (click)="changeColor()">Change color</button></span>
 </div>
 
 <table class="table table-sm">
