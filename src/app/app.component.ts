@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserService } from './user.service';
 
 @Component({
   selector: 'app-root',
@@ -33,4 +34,8 @@ export class AppComponent
   {
     this.students = this.studentCollection;
   }
+
+  constructor(
+    private usersvc: UserService
+  ){this.usersvc.list();}
 }
